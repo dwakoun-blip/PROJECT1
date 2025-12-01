@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Slider</title>
+
+<style>
+.content{
+    width:80%;
+    height:400px;
+    margin:50px auto;
+    background:black;
+    overflow:hidden;
+    position:relative;
+}
+.boxy{
+    width:100%;
+    height:100%;
+    background:rgb(0,255,55);
+    display:none;
+    text-align:center;
+    font-size:40px;
+    line-height:400px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.boxy.active{
+    display:block;
+}
+button{
+    padding:10px 20px;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="content">
+    <div class="boxy active">hello</div>
+    <div class="boxy">how are you</div>
+    <div class="boxy">hlo</div>
+</div>
+
+<button onclick="prevslide()">Prev</button>
+<button onclick="nextslide()">Next</button>
+
+<script>
+const slides = document.querySelectorAll('.boxy');
+let currentIndex = 0;
+
+function showSlide(i){
+    slides.forEach(s => s.classList.remove("active"));
+    slides[i].classList.add("active");
+}
+
+function nextslide(){
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+function prevslide(){
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+}
+
+// auto slide
+setInterval(nextslide,3000);
+
+</script>
+</body>
+</html>

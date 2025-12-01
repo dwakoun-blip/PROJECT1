@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+    header{
+        width:100%;
+        height:5rem;
+        background-color: darkslateblue;
+        margin: 0;
+        padding:0;
+        text-transform: capitalize;
+        color:white;
+        text-align: center;
+        position:relative
+    }
+    header h1{
+        font-size:5rem;
+        font-weight: 600;
+    }
+    header a{
+        color:white;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        position: absolute;
+        left: 10px;
+        top: 20px; 
+    }
+
+   main{
+    width:100%;
+    min-height:100vh;   
+    background-color: rgb(8, 8, 8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+   width:90%;
+   background-color: transparent;
+   padding:20px;
+   display:flex;
+   flex-direction:column;
+   gap:20px;
+}
+
+.container .box{
+    width:100%;
+    height:30rem;
+    background-color:transparent;
+    padding:10px;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    border:4px solid white;
+}
+
+.box .img{
+    width:20rem;
+    height:20rem;
+    margin:15px;
+    padding:5px;
+    display:flex;
+    background-color:black;
+}
+.box .img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.box:hover{
+    background-color: bisque;
+    box-shadow: 5px 5px 5px 5px gray;
+    cursor: pointer;
+}
+
+.box:nth-child(even){
+     text-align: left;  
+     flex-direction:row-reverse ;
+}
+
+.content{
+    width:80%;
+    margin-left:10px;
+    padding:20px;
+    background:#f2f2f2;
+    border-radius:10px;
+    height:25rem;
+}
+.content h1{
+    padding:10px;
+    margin:19x;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    
+    
+}
+.content p{
+    text-align:justify;
+    text-transform:capitalize;
+font-size:22px;
+font-weight: 500;
+padding:30px;
+margin:10px;}
+
+
+footer{
+    width:100%;
+    height:8rem;
+    background-color: rgb(57, 57, 60);
+    color:aliceblue;
+    text-align: center;
+    font-size:2rem;
+    align-self: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+</style>
+</head>
+
+
+<body>
+    <header>
+        <h1> restaurants</h1>
+        <a href="index.html"> &larr;Return to home page</a>
+    </header>
+    <main>
+
+<div class="container">
+
+    <div class="box">
+        <div class="img">
+           <img src="https://images.indianexpress.com/2024/10/suvarna-mahal.jpg">
+        </div>
+        <div class="content">
+            <h1> Suvarna Mahal</h1>
+            <p> **Suvarna Mahal** is a luxurious and iconic fine-dining restaurant located inside the **Rambagh Palace** in Jaipur. Known for its **royal ambiance and opulent décor**, it reflects the grandeur of Jaipur’s regal heritage with high ceilings, chandeliers, and elegant interiors. The restaurant specializes in **North Indian and Rajasthani cuisine**, offering a lavish menu that includes traditional dishes prepared with authentic flavors and premium ingredients. Signature dishes include **Laal Maas, Dal Baati Churma, and Mughlai delicacies**, often served with artistic presentation. Suvarna Mahal is perfect for **special occasions, romantic dinners, or royal culinary experiences**, as it combines excellent food with a majestic setting. The staff provides attentive service, ensuring guests enjoy a memorable dining experience. For anyone visiting Jaipur and looking to indulge in **luxury dining with traditional flavors**, Suvarna Mahal is a must-visit destination.
+</p>
+
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+   <img src="https://tse3.mm.bing.net/th/id/OIP.VNgBKh2zcJbmg5gehUp4WgHaEY?pid=Api&P=0&h=180">
+        </div>
+        <div class="content">
+            <h1> laxmi mishtaan bhandaar</h1>
+             <p>**Laxmi Mishtan Bhandar (LMB)** is one of Jaipur’s most iconic restaurants and sweet shops, located in Johari Bazaar. Known for its traditional Rajasthani flavours, it has been serving locals and tourists for decades. LMB is especially famous for its **ghewar**, a traditional sweet loved during festivals, and its **pyaaz kachori**, which is a must-try snack for anyone visiting the city.
+
+The restaurant offers a pure vegetarian menu with classic dishes like **dal-baati-churma**, **gatte ki sabzi**, **ker sangri**, and other Rajasthani specialties. Their food is prepared with pure ghee, giving each dish a rich and authentic taste. LMB’s Rajasthani thali is one of its highlights and offers a complete experience of the region’s flavours.
+
+The ambience is clean, simple, and traditional, making it a comfortable place for family dining. Whether you’re shopping in Johari Bazaar or exploring Jaipur, LMB is a perfect stop to enjoy true Rajasthani cuisine.
+</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.DpI0lCiNcNl8Rd6vPve9NQHaE8?pid=Api&P=0&h=180">
+
+        </div>
+        <div class="content">
+            <h1> 1135 AD</h1>
+            <p> **1135 AD** is one of Jaipur’s most unique and royal dining experiences, located inside the historic **Amber Fort**. The restaurant is designed to recreate the grandeur of Rajputana heritage, with beautiful golden décor, intricate carvings, and traditional furnishings that make you feel like you’re dining in a royal palace. The ambience is quiet, luxurious, and perfect for a memorable experience.
+
+The restaurant specializes in **authentic Rajasthani cuisine**, with signature dishes like *laal maas*, *safed maas*, *gatte ki sabzi*, and traditional thalis. They also offer North Indian food, prepared with rich spices and high-quality ingredients. The combination of heritage surroundings and flavourful dishes makes the meal feel special.
+
+Dining at 1135 AD is not just about food—it’s an experience of history and royalty. Many visitors enjoy it after exploring Amber Fort, especially in the evening when the fort area is beautifully lit. It’s an ideal place for tourists, couples, and anyone who wants a royal dining atmosphere.
+</p>
+
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.TVt68PDTUgEM-LWKp4eihQHaC1?pid=Api&P=0&h=180">
+
+        </div>
+        <div class="content">
+            <h1> Mohal Mahal</h1>
+            <p> **Mohan Mahal**, located inside The Leela Palace Jaipur, is one of the most elegant and luxurious dining experiences in the city. Inspired by traditional Rajput architecture, the restaurant is designed like a royal palace room, with beautifully crafted mirror work, soft lighting, and a calm, romantic atmosphere. The entire space is candle-lit at night, giving it a magical and intimate feel.
+
+The restaurant specializes in **authentic Rajasthani royal cuisine**, offering dishes like *laal maas*, *safed maas*, kebabs, and traditional thalis prepared in a rich, flavorful style. The presentation, service, and ambience make the experience feel truly regal. Mohan Mahal is ideal for couples, special celebrations, or anyone looking to enjoy a peaceful, royal dining evening in Jaipur.
+</p>
+
+        </div>
+    </div>
+
+</div>
+
+</main>
+
+<footer>
+     © 2025 All Rights Reserved | Created by Sachin
+</footer>
+
+</body>
+</html>

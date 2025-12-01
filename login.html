@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            overflow: hidden;
+        }
+        body{
+            background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Desktop-Best-And-Website-background-2560x1600.jpg);
+             background-size: cover;
+        }
+        .container{
+            width:80%;
+            height:80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin:150px;
+            padding:10px;
+            background:transparent;
+        }
+        .box{
+            width:100%;
+            height:70rem;
+         
+        }
+        .box2{
+             width:250px;
+            height:200px;
+           margin-left: 30px;
+          padding:8rem;
+          background-color:bisque;
+        }
+        .box2 label{
+        display: block;
+    color: rgb(18, 18, 18);
+    font-size: 25px;
+    text-transform: capitalize;
+
+            
+        }
+        .box2 form{
+            margin-top: -55px;
+            padding:15px;
+            position:relative;
+            top:-60px;
+            padding-top:50px;
+            
+        }
+        .box2 h1{
+          position:relative;
+          top:-80px;
+            text-align: center;
+            margin-top:0;
+            margin-bottom:1.5rem;
+            font-style: italic;
+            font-weight: 800;
+            color:blue;
+            font-size:50px;
+             
+
+        }
+        
+      
+        
+        .box2 input{
+            
+            width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border:transparent;
+   text-decoration: underline;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+        }
+        .box2 .button{
+            width:100%;
+            padding:5px;
+            margin-bottom:15px;
+        border:1px solid black;
+    box-sizing:border-box;
+    background-color: blue;
+    color:white;
+ 
+
+}
+.box2 .button:hover{
+    background-color: green;
+
+}
+    </style>
+</head>
+<body>
+    <header></header>
+<main> 
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box2">
+           
+            
+                 <h1>
+                    Login Here
+                 </h1>
+          <form>
+            <label for="username"> Username</label></br>
+            <input type="text" placeholder="username"><br>
+            <label for="password"> password</label></br>
+            <input type="password" placeholder="password"><br>
+            <input type="submit" class="button"><br>
+           </form>
+
+        </div>
+    </div>
+    
+        <script>
+    const form = document.querySelector("form");
+    const username=document.querySelector("input[placeholder='username']");
+     const password=document.querySelector("input[placeholder='password']");
+     form.addEventListener("submit",function(e){
+        e.preventDefault();
+        if (username.value.trim()===""||password.value.trim()===""){
+            alert("plese fill the fills");
+        }
+            else{
+                localStorage.setItem("username",username.value);
+                window.location.href= "index.html";
+            }
+        });
+        
+</script>
+
+
+    
+</main>    
+</body>
+</html>

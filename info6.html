@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+    header{
+        width:100%;
+        height:5rem;
+        background-color: darkslateblue;
+        margin: 0;
+        padding:0;
+        text-transform: capitalize;
+        color:white;
+        text-align: center;
+        position:relative
+    }
+    header h1{
+        font-size:5rem;
+        font-weight: 600;
+    }
+    header a{
+        color:white;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        position: absolute;
+        left: 10px;
+        top: 20px; 
+    }
+
+   main{
+    width:100%;
+    min-height:100vh;   
+    background-color: rgb(8, 8, 8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+   width:90%;
+   background-color: transparent;
+   padding:20px;
+   display:flex;
+   flex-direction:column;
+   gap:20px;
+}
+
+.container .box{
+    width:100%;
+    height:30rem;
+    background-color:transparent;
+    padding:10px;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    border:4px solid white;
+}
+
+.box .img{
+    width:20rem;
+    height:20rem;
+    margin:15px;
+    padding:5px;
+    display:flex;
+    background-color:black;
+}
+.box .img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.box:hover{
+    background-color: bisque;
+    box-shadow: 5px 5px 5px 5px gray;
+    cursor: pointer;
+}
+
+.box:nth-child(even){
+     text-align: left;  
+     flex-direction:row-reverse ;
+}
+
+.content{
+    width:80%;
+    margin-left:10px;
+    padding:20px;
+    background:#f2f2f2;
+    border-radius:10px;
+    height:25rem;
+}
+.content h1{
+    padding:10px;
+    margin:19x;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    
+    
+}
+.content p{
+    text-align:justify;
+    text-transform:capitalize;
+font-size:22px;
+font-weight: 500;
+padding:30px;
+margin:10px;}
+
+footer{
+    width:100%;
+    height:8rem;
+    background-color: rgb(57, 57, 60);
+    color:aliceblue;
+    text-align: center;
+    font-size:2rem;
+    align-self: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+</style>
+</head>
+
+
+<body>
+    <header>
+        <h1>HANDI CRAFTS</h1>
+        <a href="index.html"> &larr;Return to home page</a>
+    </header>
+    <main>
+
+<div class="container">
+
+    <div class="box">
+        <div class="img">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Uwfc9dEEGL0uqJ1G5d5fxAHaE0?pid=Api&P=0&h=180">
+
+        </div>
+        <div class="content">
+            <h1>Blue pottery</h1>
+            <p> **Blue Pottery** is one of Jaipur’s most famous and unique handicrafts, known for its striking blue and turquoise colours. Unlike regular pottery, blue pottery is made from a special mixture of quartz, glass powder, and multani mitti instead of clay, which gives it a smooth and glossy finish. The craft is inspired by Persian and Mughal art, featuring floral patterns, birds, and geometric designs.
+
+Artisans paint each piece by hand, making every item unique. Common products include plates, bowls, vases, tiles, cups, and decorative items. Blue pottery is loved for its beauty, durability, and elegant designs. It is also eco-friendly because it is fired at a low temperature and uses natural dyes. Jaipur is the main centre for this craft, and it has become a popular souvenir for tourists visiting Rajasthan.
+</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.dztKsdEf9DnYLjKwqSke6QHaE5?pid=Api&P=0&h=180">
+        </div>
+        <div class="content">
+            <h1> marble handcrafts</h1>
+            <p>**Marble handicrafts** from Jaipur are among the most beautiful and detailed crafts of Rajasthan. Skilled artisans carve high-quality white Makrana and other types of marble into elegant decorative and utility items. These crafts are known for their fine workmanship, smooth finishing, and intricate designs. Many pieces feature **hand-painting, gold leaf work, meenakari, and stone inlay** similar to the designs seen in Mughal architecture.
+
+Common marble handicraft items include **vases, statues, candle stands, boxes, coasters, plates, temples, and decorative elephants**. The carving is done using traditional tools, and each item can take several days to complete. Jaipur’s marble work is especially popular because it combines durability with artistic beauty.
+
+These crafts are often used for home décor and gifting, as they add a royal and timeless touch to any space. Jaipur’s markets like Johari Bazaar and Chandpole are well-known for authentic marble handicrafts.
+</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.MKG9F4YFVScalmOlig0P3wHaLT?pid=Api&P=0&h=180">
+        </div>
+        <div class="content">
+            <h1>kindan meenakari jewellery</h1>
+            <p> **Kundan and Meenakari jewellery** are two of Jaipur’s most famous and exquisite traditional jewellery styles, known for their royal look and fine craftsmanship. **Kundan jewellery** involves setting uncut or polished gemstones into a base of pure gold using a special wax-like material called *laakh*. This technique gives the jewellery a rich, regal appearance and has been popular since the Mughal era.
+
+**Meenakari jewellery**, on the other hand, is famous for its colourful enamel work. Artisans fill engraved patterns on metal surfaces with vibrant colours like red, blue, green, and white. Many pieces combine both styles—Kundan on the front and Meenakari at the back—creating jewellery that is beautiful from every angle.
+
+These pieces are widely used in weddings and festive occasions, symbolizing elegance, tradition, and timeless artistry.
+</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="img">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.OdoFuzXZBYew3TUkP_wjGwHaHa?pid=Api&P=0&h=180">
+        </div>
+        <div class="content">
+            <h1> lac bangles</h1>
+            <p> **Lac bangles** are one of Jaipur’s most colorful and traditional handicrafts, widely loved for their bright designs and cultural significance. Made from **lac**, a natural resin, these bangles are shaped by heating and molding the material on a wooden stick. Once formed, artisans decorate them with mirrors, beads, stones, and vibrant colors to create intricate patterns.
+
+These bangles are especially popular during festivals, weddings, and traditional ceremonies because they symbolize good luck and prosperity. Jaipur’s Johari Bazaar and Tripolia Bazaar are famous hubs where you can watch artisans crafting them in small workshops using age-old techniques.
+
+Lac bangles are lightweight, affordable, and available in countless designs—from simple everyday styles to heavily decorated bridal sets. Their handmade beauty and cultural charm make them a perfect souvenir for anyone visiting Jaipur.
+</p>
+        </div>
+    </div>
+
+</div>
+
+</main>
+
+<footer>
+     © 2025 All Rights Reserved | Created by Sachin
+</footer>
+
+</body>
+</html>

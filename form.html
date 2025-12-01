@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+        }
+        body{
+            background-color: beige;
+            text-transform: capitalize;
+        }
+        .box{
+          
+            width:60rem;
+            height:30rem;
+            margin:150px;
+            padding:20px;
+            background-color: transparent;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            display: flex;
+        }
+        .box .form{
+            margin:50px;
+            padding:10px;
+            align-self: center;
+             background-color:transparent;
+             height:80%;
+             text-align: center;
+             width:100%;
+             height:100%;
+
+        }
+        .form h1{
+            font-size: 2.5rem;
+            font-weight: 800;
+            color:blue;
+        }
+        .form {
+            margin:10px;
+            padding:10px;
+
+        }
+        .form .xyz{
+           text-align: left;
+           display:block;
+           font-weight:600;
+           font-size: 22px;
+          
+        } 
+        .form .abc {
+            display:block;
+    text-align:left;
+    width:20%;
+    margin-top: 0;
+    padding:6px;
+    border: transparent;
+    border-radius: 10px;
+
+        }
+        .form .ppp{
+           text-align: right;
+           margin-top:0;
+           display:block;
+           font-weight:600;
+           font-size: 22px;
+          
+        position: absolute;
+         top:17rem;
+        right:28rem;}
+    .form .qqq {
+     display:block;
+    width:15%;
+    margin-top: 0;
+    padding:6px;
+    border: transparent;
+    border-radius: 10px;
+    position: absolute;
+ top:20rem;
+ right:28rem
+
+        }
+.form .iii{
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 25px;
+   position: absolute;
+   top:25rem;
+   left:20rem;
+   font-family:'Times New Roman', Times, serif;
+   font-weight: 700;
+}
+.form textarea{
+    width:300px;
+    height:150px;
+    border-radius: 10px;
+}
+.form .submit{
+    padding:10px;
+    position:absolute;
+    top:570px;
+    margin:30px;
+    padding:10px;
+    display:block;
+    background-color: rgb(39, 85, 222);
+    color:white;
+
+  
+    width:40%;
+    align-self:center;
+}
+@media(max-width:600px){
+
+    .box{
+        width:100%;
+        height:45rem;  /* extra height so space mil jaaye */
+        margin:20px auto;
+        padding:10px;
+        position:relative;
+    }
+
+    .form .xyz{
+        font-size:18px;
+    }
+
+    .form .abc{
+        width:70%;
+    }
+
+    .form .ppp{
+        top:14rem;
+        right:8rem;
+        font-size:18px;
+    }
+
+    .form .qqq{
+        top:16rem;
+        right:1rem;
+        width:65%;
+    }
+
+    .form .iii{
+        top:20rem;
+        left:1rem;
+        font-size:20px;
+    }
+
+    .form textarea{
+        width:220px;
+        height:120px;
+        position:absolute;
+        top:23rem;
+        left:1rem;
+    }
+
+    .form .submit{
+        top:32rem;
+        width:80%;
+        left:10%;
+    }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="form">
+            <h1> Feedback form</h1>
+            <form>
+            <label for="name" class="xyz"> Enter Name Here </label></br>
+                <input type="text" class="abc" placeholder="enter name here"></br>
+                <label for="mail" class="ppp"> Enter Email here</label></br>
+                <input type="email" class ="qqq" placeholder="Email here "></br>
+                <label for="your feedback here" class="iii"> feedback here </label>
+                <textarea placeholder=" write here" ></textarea>
+                <input type="submit" class="submit">
+
+            </form>
+        </div>
+    </div>
+    <script>
+        const nameInput = document.querySelector(".abc");
+const emailInput = document.querySelector(".qqq");
+const feedbackInput = document.querySelector("textarea");
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let nameVal = nameInput.value.trim();
+    let emailVal = emailInput.value.trim();
+    let feedbackVal = feedbackInput.value.trim();
+
+    if(nameVal === "" || emailVal === "" || feedbackVal === ""){
+        alert("PLEASE FILL ALL FIELDS");
+    } else {
+        alert("Thank you for helping!");
+        
+        nameInput.value = "";
+        emailInput.value = "";
+        feedbackInput.value = "";
+    }
+});
+
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
